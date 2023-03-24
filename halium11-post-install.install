@@ -1,0 +1,10 @@
+post_install() {
+  # Disable systemd-resolved
+    sed -i s/"enable systemd-resolved.service"/"disable systemd-resolved.service"/g /usr/lib/systemd/system-preset/90-systemd.preset
+    touch /.writable_image
+}
+
+post_upgrade() {
+  # Set chassis
+    hostnamectl set-chassis handset 
+}

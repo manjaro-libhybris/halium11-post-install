@@ -1,0 +1,9 @@
+[Unit]
+Description=Halium 11 Post Install.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/halium11-post-install
+
+[Install]
+WantedBy=default.target
