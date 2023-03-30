@@ -1,5 +1,5 @@
 #!/bin/sh
-# This is the post install script for Halium 9 devices!
+# This is the post install script for Halium 11 devices!
 
 # Set chassis
 hostnamectl set-chassis handset
